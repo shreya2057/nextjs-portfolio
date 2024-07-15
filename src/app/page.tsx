@@ -1,40 +1,19 @@
+"use client";
 import Image from "next/image";
-import { AvatarImage, BrownBubble, GreenBubble } from "../assets/images";
+import { useRouter } from "next/navigation";
+import { PrimaryButton } from "../components/Buttons/PrimaryButton";
+import { CodingBrowser, CodingIcon } from "../assets/images";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="flex max-h-min w-full bg-black px-16 items-center py-10 relative overflow-hidden">
-      <Image
-        src={GreenBubble}
-        alt="green bubble"
-        className="absolute w-20 top-10 right-20 opacity-20"
-      />
-      <Image
-        src={GreenBubble}
-        alt="green bubble"
-        className="absolute w-20 top-60 right-40 opacity-20"
-      />
-      <Image
-        src={BrownBubble}
-        alt="brown bubble"
-        className="absolute w-20 bottom-10 right-60 opacity-20"
-      />
-      <Image
-        src={GreenBubble}
-        alt="brown bubble"
-        className="absolute w-20 top-60 -right-10 opacity-20"
-      />
-      <Image
-        src={BrownBubble}
-        alt="brown bubble"
-        className="absolute w-20 bottom-0 right-0 opacity-20"
-      />
-      <div className="flex justify-between w-full ">
+      <div className="flex justify-between w-full gap-20">
         <div className="flex flex-1 gap-5 flex-col justify-center">
           <div className="flex gap-4">
             <div className=" text-amber-600 font-bold text-5xl">Hello!!!</div>
           </div>
-          <div className="text-green-400">
+          <div className="text-green-400 text-justify">
             I am a front end web developer who is passionate learner with
             expertise in HTML, CSS, JavaScript, React and CSS frameworks. I
             excel at designing responsive and dyanmic website using various
@@ -43,14 +22,29 @@ export default function Home() {
             created numeroud creative and dynamic websites. I also have proven
             experience as a React Developer.
           </div>
-        </div>
-        <div className="flex-1 flex justify-center w-full">
-          <Image
-            src={AvatarImage}
-            className="z-10"
-            alt="Avatar image"
-            height={360}
+          <PrimaryButton
+            text="View my resume"
+            onClickFunction={() => {
+              router.push("/resume");
+            }}
           />
+        </div>
+        <div className="flex-1 flex justify-center items-center">
+          <div className=" w-48 h-48 relative">
+            <Image
+              src={CodingBrowser}
+              className="absolute"
+              alt="Avatar image"
+              width={200}
+              height={150}
+            />
+            <Image
+              className="absolute -bottom-10 -left-10"
+              src={CodingIcon}
+              alt="Avatar image"
+              height={150}
+            />
+          </div>
         </div>
       </div>
     </div>
