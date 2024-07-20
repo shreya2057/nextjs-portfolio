@@ -1,4 +1,6 @@
+"use client";
 import { ResumeImage } from "@/nextjs-portfolio/assets/images";
+import { GreyButton } from "@/nextjs-portfolio/components/Buttons/GreyButton";
 import Image from "next/image";
 import {
   AiFillLinkedin,
@@ -23,7 +25,7 @@ export const Details = () => {
           React Developer
         </div>
 
-        <div className="flex flex-col gap-3 w-full justify-between text-[13px]">
+        <div className="flex flex-col gap-3 w-full justify-between text-sm">
           <span className="flex items-center gap-2">
             <AiOutlinePhone />
             <span>+977 9746488946</span>
@@ -46,6 +48,7 @@ export const Details = () => {
           </span>
         </div>
       </div>
+      <GreyButton text={"Download Resume"} onClickFunction={() => {}} />
     </div>
   );
 };
