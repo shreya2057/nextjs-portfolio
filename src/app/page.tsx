@@ -7,8 +7,8 @@ import { CodingBrowser, CodingIcon } from "../assets/images";
 export default function Home() {
   const router = useRouter();
   return (
-    <div className="flex max-h-min w-full bg-black px-16 items-center py-10 relative overflow-hidden">
-      <div className="flex justify-between w-full gap-20">
+    <div className="flex bg-black px-16 py-10 relative overflow-hidden">
+      <div className="flex justify-between w-full gap-20 ">
         <div className="flex flex-1 gap-5 flex-col justify-center">
           <div className="flex gap-4">
             <div className=" text-amber-600 font-bold text-5xl">Hello!!!</div>
