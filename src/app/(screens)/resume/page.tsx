@@ -1,16 +1,19 @@
+import RouteTransition from "@/nextjs-portfolio/components/Animations/RouteTransition";
 import { Experience } from "./_components/Experience";
 import { ResumeProjects } from "./_components/ResumeProjects";
-import { ResumeSummary } from "./_components/ResumeSummary";
+import { Details } from "./_components/Details";
+import { About } from "./_components/About";
 
 export default function Resume() {
   return (
-    <div className="flex w-full justify-center bg-gray-50 py-10">
-      <div className="w-[80%] flex flex-col bg-white shadow-md p-10 gap-6">
-        <ResumeSummary />
-        <div className="flex flex-col">
-          <Experience />
-          <ResumeProjects />
-        </div>
+    <div className="flex w-full justify-center h-full px-10 gap-10">
+      <div className="md:flex-[20%]">
+        <Details />
+      </div>
+
+      <div className="flex flex-col gap-6 flex-[75%]">
+        <About />
+        <Experience />
       </div>
     </div>
   );
