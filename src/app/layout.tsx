@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "../components/Navbar";
 import RouteTransition from "../components/Animations/RouteTransition";
+import { Footer } from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,7 @@ export default function RootLayout({
           <RouteTransition>
             <div className="flex min-h-full min-w-screen">{children}</div>
           </RouteTransition>
-          <footer>Test</footer>
+          <Footer />
         </div>
       </body>
     </html>
