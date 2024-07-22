@@ -9,7 +9,7 @@ export const Landing = () => {
   const router = useRouter();
 
   return (
-    <div className="flex bg-gray-800 px-40 py-10 relative overflow-hidden w-full h-[80dvh]">
+    <div className="flex bg-gray-800 px-40 py-10 relative overflow-hidden w-full h-[85dvh]">
       <div className="flex justify-between w-full gap-20 ">
         <div className="flex flex-[65%] gap-5 flex-col justify-center">
           <div className="flex items-center gap-3 text-amber-300 text-sm font-bold bg-amber-200 px-4 py-1 bg-opacity-25 rounded-md max-w-min text-nowrap flex-nowrap">
