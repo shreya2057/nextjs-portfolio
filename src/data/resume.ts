@@ -1,4 +1,8 @@
-import { ResumeExperienceType, ResumeProjectType } from "../type";
+import {
+  EducationType,
+  ResumeExperienceType,
+  ResumeProjectType,
+} from "../type";
 
 export const experience: ResumeExperienceType[] = [
   {
@@ -54,7 +58,7 @@ export const resumeProjects: ResumeProjectType[] = [
   },
 ];
 
-export const education = [
+export const education: EducationType[] = [
   {
     id: 1,
     institution: "Kathmandu University",
@@ -76,4 +80,21 @@ export const education = [
     graduationYear: "2016",
     gpa: "3.65",
   },
+];
+
+export const skills: string[] = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Typescript",
+  "Next.js",
+  "React.js",
+  "Tailwind CSS",
+  "Chakra UI",
+  "Shadcn",
+  "React Query",
+  "React-hook-form",
+  "Redux",
+  "RTK Query",
+  "Firebase",
 ];

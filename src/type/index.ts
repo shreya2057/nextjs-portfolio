@@ -15,3 +15,11 @@ export type ResumeProjectType = {
   tools: string;
   link: string;
 };
+
+export type EducationType = {
+  id: number;
+  institution: string;
+  courseName: string;
+  graduationYear: string;
+  gpa: string;
+};
