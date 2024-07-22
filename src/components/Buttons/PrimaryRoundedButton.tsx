@@ -1,4 +1,4 @@
-export const PrimaryButton = ({
+export const PrimaryRoundedButton = ({
   text,
   onClickFunction,
 }: {
@@ -9,7 +9,7 @@ export const PrimaryButton = ({
     <div>
       <button
         onClick={onClickFunction}
-        className="bg-amber-600 px-4 py-1.5 text-sm text-white hover:bg-amber-500 "
+        className="bg-amber-600 px-4 py-3 text-white rounded-lg hover:bg-amber-500 "
       >
         {text}
       </button>

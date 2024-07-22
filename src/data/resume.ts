@@ -53,3 +53,27 @@ export const resumeProjects: ResumeProjectType[] = [
     tools: "HTML, CSS, JavaScript, Node.Js, and Mongo DB.",
   },
 ];
+
+export const education = [
+  {
+    id: 1,
+    institution: "Kathmandu University",
+    courseName: "BSc.Computer Science",
+    graduationYear: "2023",
+    gpa: "3.70",
+  },
+  {
+    id: 2,
+    institution: "Little Angel's High School",
+    courseName: "High School",
+    graduationYear: "2018",
+    gpa: "3.29",
+  },
+  {
+    id: 3,
+    institution: "KMC School",
+    courseName: "SLC",
+    graduationYear: "2016",
+    gpa: "3.65",
+  },
+];

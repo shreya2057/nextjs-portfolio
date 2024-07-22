@@ -1,12 +1,3 @@
-import { ResumeImage } from "@/nextjs-portfolio/assets/images";
-import Image from "next/image";
-import {
-  AiFillLinkedin,
-  AiOutlineGithub,
-  AiOutlineMail,
-  AiOutlinePhone,
-} from "react-icons/ai";
-
 export const About = () => {
   return (
     <div className="flex flex-col bg-gray-700 p-10 rounded-md text-gray-200 gap-6">
