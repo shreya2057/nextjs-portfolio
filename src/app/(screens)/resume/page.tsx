@@ -4,15 +4,17 @@ import { ResumeProjects } from "./_components/ResumeProjects";
 import { Details } from "./_components/Details";
 import { About } from "./_components/About";
 import { Education } from "./_components/Education";
+import { Skills } from "./_components/Skills";
 
 export default function Resume() {
   return (
     <div className="flex w-full justify-center h-full px-10 gap-10">
-      <div className="flex flex-col md:flex-[20%] gap-6">
+      <div className="flex flex-col md:flex-[20%] gap-6 justify-between">
         <Details />
+        <Skills />
         <Education />
       </div>
-      <div className="flex flex-col gap-6 flex-[75%]">
+      <div className="flex flex-col gap-6 flex-[75%] justify-between">
         <About />
         <Experience />
         <ResumeProjects />
