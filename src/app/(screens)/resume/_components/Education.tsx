@@ -15,12 +15,12 @@ export const Education = () => {
             ({ id, courseName, gpa, graduationYear, institution }) => (
               <div className="flex flex-col gap-2" key={id}>
                 <span className="flex items-center gap-2">
-                  <HiOutlineAcademicCap />
-                  <span className="font-semibold">{institution}</span>
+                  <BiBookBookmark />
+                  <span className="font-semibold">{courseName}</span>
                 </span>
                 <span className="flex items-center gap-2 pl-4 text-[13px]">
-                  <BiBookBookmark />
-                  <span>{courseName}</span>
+                  <HiOutlineAcademicCap />
+                  <span>{institution}</span>
                 </span>
                 <span className="flex items-center gap-2 pl-4 text-[13px]">
                   <IoCalendarOutline />
