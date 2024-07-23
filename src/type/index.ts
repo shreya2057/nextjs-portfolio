@@ -23,3 +23,9 @@ export type EducationType = {
   graduationYear: string;
   gpa: string;
 };
+
+export type AwardsType = {
+  id: number;
+  title: string;
+  event: string;
+};

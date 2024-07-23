@@ -1,4 +1,5 @@
 import {
+  AwardsType,
   EducationType,
   ResumeExperienceType,
   ResumeProjectType,
@@ -156,4 +157,25 @@ export const skills: string[] = [
   "Redux",
   "RTK Query",
   "Firebase",
+];
+
+export const additionalSkills = [
+  "SQL",
+  "Oracle Business Intelligence",
+  "Oracle BI publisher",
+  "Report designing tools",
+];
+
+export const volunteering = [
+  "KU HackFest 2021",
+  "GitHub Field Day Nepal 2022",
+  "GitHub Field Day Nepal 2023",
+];
+
+export const awards: AwardsType[] = [
+  {
+    id: 1,
+    title: "Best innovation in technology",
+    event: "Ace Ignite 2022",
+  },
 ];
