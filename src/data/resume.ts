@@ -53,8 +53,67 @@ export const resumeProjects: ResumeProjectType[] = [
       "Creating and promoting events using single platform.",
       "Monitoring and managing the participants of the event.",
     ],
-    link: "test",
+    link: "https://github.com/shreya2057/EventTrack",
     tools: "HTML, CSS, JavaScript, Node.Js, and Mongo DB.",
+  },
+  {
+    id: 2,
+    projectName: "Sahayogi haat",
+    projectType: "Semester project",
+    about:
+      "Sahayogi Haath provides a single platform for users to search charity organizations, get detailed information and donate. This application also integrates eSewa payment.",
+    keyFeatures: [
+      "Search Charity Organizations based on Location and Categories.",
+      "Receive Donations (if you are a verified charity organization).",
+      "Make donations directly from the app (for donors).",
+      "Admin Panel for donation verifcation, retrival and publishing activities.",
+    ],
+    link: "https://github.com/shreya2057/Sahayogi_Haath_Donation_App",
+    tools: "Flutter, Cloud Firestore, Firebase Auth and Cloudinary.",
+  },
+  {
+    id: 3,
+    projectName: "EventTrack-v2.0",
+    projectType: "Semester project",
+    about:
+      "EventTrack-v2.0 is a mobile application for Event Management. The application can be used by both organisers and users for promoting and finding an event.",
+    keyFeatures: [
+      "Searching and exploring the events based on categories, location and time of the event.",
+      "Creating and promoting events using single platform.",
+      "Monitoring and managing the participants of the event.",
+    ],
+    link: "https://github.com/shreya2057/EventTrack-app-v2.0",
+    tools: "Flutter, Node.Js, and MongoDb",
+  },
+  {
+    id: 4,
+    projectName: "EventTrace",
+    projectType: "Semester project",
+    about:
+      "EventTrace is the complete Event managament and tracking Web-based Application that brings participants and organiser of the events in a single platfom. It helps user find and register for an event. EventTrace helps the organiser manage and promote the event on the single platform.",
+    keyFeatures: [
+      "Searching and exploring the interested categories of events",
+      "Registering for an event.",
+      "Create, manage and promote event.",
+      "View and manage the participants of the events.",
+    ],
+    link: "https://github.com/shreya2057/Event-Trace",
+    tools: "React.js, and Firebase.",
+  },
+  {
+    id: 5,
+    projectName: "Ecommerce app",
+    projectType: "Semester project",
+    about:
+      "Ecommerce app is the ecommerce plaform that allows user to find and buy the item of there choice.",
+    keyFeatures: [
+      "Searching and exploring the items.",
+      "Adding the items to the cart.",
+      "View items according to the category.",
+      "View the past orders.",
+    ],
+    link: "https://github.com/shreya2057/Ecommerce_app",
+    tools: "Chakra UI, React Query, Zustand, React.js and dummyJSON.",
   },
 ];
 
