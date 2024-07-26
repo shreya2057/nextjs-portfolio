@@ -19,9 +19,7 @@ export const ResumeSummary = () => {
       </div>
       <div className="flex flex-[70%] text-sm text-justify flex-col xl:h-48 justify-between gap-2 xl:gap-0">
         <p className="text-3xl font-extrabold">Shreya Shrestha</p>
-        <p className="text-lg font-semibold text-gray-500">
-          Front-end React Developer
-        </p>
+        <p className="text-lg font-semibold text-gray-500">React Developer</p>
 
         <div className="flex flex-wrap gap-2 w-full justify-between text-[13px]">
           <span className="flex items-center gap-2">
@@ -45,7 +43,7 @@ export const ResumeSummary = () => {
             <a href="https://github.com/shreya2057">shreya2057</a>
           </span>
         </div>
-        <hr className="border-gray-300" />
+        <hr className="border-black border-[1.5px]" />
         <p className="text-sm text-justify">
           A front-end developer with a solid understanding of HTML, CSS,
           JavaScript, TypeScript, and React. One year of professional experience
