@@ -1,11 +1,11 @@
 import { additionalSkills, skills } from "@/nextjs-portfolio/data/resume";
-import { forwardRef, LegacyRef, MutableRefObject } from "react";
-import { ResumeSummary } from "./_downloadResume/ResumeSummary";
-import { ExperienceSection } from "./_downloadResume/ExperienceSection";
-import { SkillsSection } from "./_downloadResume/SkillsSection";
-import { EducationSection } from "./_downloadResume/EducationSection";
-import { ProjectSection } from "./_downloadResume/ProjectSection";
+import { forwardRef } from "react";
 import { AwardsSection } from "./_downloadResume/AwardsSection";
+import { EducationSection } from "./_downloadResume/EducationSection";
+import { ExperienceSection } from "./_downloadResume/ExperienceSection";
+import { ProjectSection } from "./_downloadResume/ProjectSection";
+import { ResumeSummary } from "./_downloadResume/ResumeSummary";
+import { SkillsSection } from "./_downloadResume/SkillsSection";
 import { VolunteeringSection } from "./_downloadResume/VolunteeringSection";
 
 const DownloadResume = forwardRef<HTMLDivElement, {}>(function (_, ref) {
