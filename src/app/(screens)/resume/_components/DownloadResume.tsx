@@ -10,10 +10,7 @@ import { VolunteeringSection } from "./_downloadResume/VolunteeringSection";
 
 const DownloadResume = forwardRef<HTMLDivElement, {}>(function (_, ref) {
   return (
-    <div
-      ref={ref}
-      className="w-full flex flex-col bg-white shadow-md p-10 gap-6"
-    >
+    <div ref={ref} className="w-full flex flex-col bg-white gap-6">
       <ResumeSummary />
       <div className="flex flex-col gap-6">
         <ExperienceSection />
