@@ -8,8 +8,11 @@ import {
   AiOutlineMail,
   AiOutlinePhone,
 } from "react-icons/ai";
+import DownloadResume from "./DownloadResume";
+import { useRef } from "react";
 
 export const Details = () => {
+  const resumeRef = useRef<HTMLDivElement>(null);
   return (
     <div className="flex flex-col items-center bg-gray-700 p-8 rounded-md gap-4">
       <div className="flex rounded-md h-48 p-4 bg-gray-200">
@@ -49,6 +52,9 @@ export const Details = () => {
         </div>
       </div>
       <GreyButton text={"Download Resume"} onClickFunction={() => {}} />
+      {/* <div id="report">
+        <DownloadResume ref={resumeRef} />
+      </div> */}
     </div>
   );
 };
