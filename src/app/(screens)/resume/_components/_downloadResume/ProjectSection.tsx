@@ -27,8 +27,10 @@ export const ProjectSection = () => {
               <ul className="flex flex-col list-disc pl-6">
                 <li className="font-bold">Key Features</li>
                 <ul className="flex flex-col list-disc pl-6 gap-1">
-                  {keyFeatures?.map((features) => (
-                    <li className="text-sm">{features}</li>
+                  {keyFeatures?.map((features, index) => (
+                    <li className="text-sm" key={index}>
+                      {features}
+                    </li>
                   ))}
                 </ul>
               </ul>

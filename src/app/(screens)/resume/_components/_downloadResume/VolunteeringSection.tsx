@@ -10,7 +10,7 @@ export const VolunteeringSection = () => {
       </div>
       <div className="flex flex-col gap-1">
         {volunteering.map((volunteer, index) => (
-          <div className="flex gap-2">
+          <div className="flex gap-2" key={index}>
             <IoMdArrowRoundForward className="flex-shrink-0 flex-grow-0" />
             <span key={index} className="text-sm text-nowrap mr-1">
               {volunteer}
