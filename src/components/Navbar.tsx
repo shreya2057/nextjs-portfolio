@@ -12,7 +12,7 @@ export const NavBar = () => {
         <Link href={"/"}>Home</Link>
         <Link href={"/projects"}>Projects</Link>
         <Link href={"/certifications"}>Certifications</Link>
-        <Link href={"/resume"}>Resume</Link>
+        <Link href={"/about"}>About</Link>
         <Link href={"/contact"}>
           <div className="px-3 py-1 border border-amber-500 rounded-md">
             Contact
