@@ -24,8 +24,8 @@ export const Landing = () => {
             expertise in HTML, CSS, JavaScript, React and CSS frameworks.
           </div>
           <PrimaryButton
-            text="View my resume"
-            onClickFunction={() => router.push("/resume")}
+            text="About me"
+            onClickFunction={() => router.push("/about")}
           />
         </div>
         <div className="flex-[35%] flex justify-center items-center">

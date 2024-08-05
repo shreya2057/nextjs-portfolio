@@ -179,3 +179,16 @@ export const awards: AwardsType[] = [
     event: "Ace Ignite 2022",
   },
 ];
+
+export const aboutSectionSkills = {
+  frontEnd: ["HTML", "CSS", "JavaScript", "Typescript", "React"],
+  frameworks: [
+    "Next.js",
+    "Tailwind CSS",
+    "Chakra UI",
+    "ShadCn",
+    "React-hook-form",
+  ],
+  apiAndState: ["React Query", "Zustand", "Redux", "RTK Query", "Axios"],
+  tools: ["Git", "GitHub", "GitLab"],
+};
