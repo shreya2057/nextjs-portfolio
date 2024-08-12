@@ -3,7 +3,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 
 function Projects() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4  bg-gray-700 p-10 rounded-md text-gray-200">
       <div>
         <p className="text-2xl font-bold">Projects</p>
         <hr className="flex w-48 border-black border-[1.5px]" />
