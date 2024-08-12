@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type ResumeExperienceType = {
   id: number;
   position: string;
@@ -14,6 +16,7 @@ export type ResumeProjectType = {
   keyFeatures: string[];
   tools: string;
   link: string;
+  image: StaticImageData;
 };
 
 export type EducationType = {

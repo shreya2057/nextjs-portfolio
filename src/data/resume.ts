@@ -1,4 +1,10 @@
 import {
+  EventTrace,
+  EventTrack,
+  EventTrackV2,
+  SahayogiHaat,
+} from "../assets/screenshots";
+import {
   AwardsType,
   EducationType,
   ResumeExperienceType,
@@ -44,6 +50,7 @@ export const experience: ResumeExperienceType[] = [
 export const resumeProjects: ResumeProjectType[] = [
   {
     id: 1,
+    image: EventTrack,
     projectName: "EventTrack",
     projectType: "Semester project",
     about:
@@ -60,6 +67,7 @@ export const resumeProjects: ResumeProjectType[] = [
   {
     id: 2,
     projectName: "Sahayogi haat",
+    image: SahayogiHaat,
     projectType: "Semester project",
     about:
       "Sahayogi Haath provides a single platform for users to search charity organizations, get detailed information and donate. This application also integrates eSewa payment.",
@@ -75,13 +83,16 @@ export const resumeProjects: ResumeProjectType[] = [
   {
     id: 3,
     projectName: "EventTrack-v2.0",
+    image: EventTrackV2,
     projectType: "Semester project",
     about:
       "EventTrack-v2.0 is a mobile application for Event Management. The application can be used by both organisers and users for promoting and finding an event.",
     keyFeatures: [
-      "Searching and exploring the events based on categories, location and time of the event.",
-      "Creating and promoting events using single platform.",
-      "Monitoring and managing the participants of the event.",
+      "  Search nearby events based on categories and timelines",
+      "Authentication and Role Based Access Control for attendees, organizers and admins",
+      "Register to the events directly from the app",
+      "Full CRUD operations to manage events (for verified organizers)",
+      "Used MapBox library to geolocate event address and integrating maps",
     ],
     link: "https://github.com/shreya2057/EventTrack-app-v2.0",
     tools: "Flutter, Node.Js, and MongoDb",
@@ -89,6 +100,7 @@ export const resumeProjects: ResumeProjectType[] = [
   {
     id: 4,
     projectName: "EventTrace",
+    image: EventTrace,
     projectType: "Semester project",
     about:
       "EventTrace is the complete Event managament and tracking Web-based Application that brings participants and organiser of the events in a single platfom. It helps user find and register for an event. EventTrace helps the organiser manage and promote the event on the single platform.",
@@ -101,21 +113,21 @@ export const resumeProjects: ResumeProjectType[] = [
     link: "https://github.com/shreya2057/Event-Trace",
     tools: "React.js, and Firebase.",
   },
-  {
-    id: 5,
-    projectName: "Ecommerce app",
-    projectType: "Semester project",
-    about:
-      "Ecommerce app is the ecommerce plaform that allows user to find and buy the item of there choice.",
-    keyFeatures: [
-      "Searching and exploring the items.",
-      "Adding the items to the cart.",
-      "View items according to the category.",
-      "View the past orders.",
-    ],
-    link: "https://github.com/shreya2057/Ecommerce_app",
-    tools: "Chakra UI, React Query, Zustand, React.js and dummyJSON.",
-  },
+  // {
+  //   id: 5,
+  //   projectName: "Ecommerce app",
+  //   projectType: "Semester project",
+  //   about:
+  //     "Ecommerce app is the ecommerce plaform that allows user to find and buy the item of there choice.",
+  //   keyFeatures: [
+  //     "Searching and exploring the items.",
+  //     "Adding the items to the cart.",
+  //     "View items according to the category.",
+  //     "View the past orders.",
+  //   ],
+  //   link: "https://github.com/shreya2057/Ecommerce_app",
+  //   tools: "Chakra UI, React Query, Zustand, React.js and dummyJSON.",
+  // },
 ];
 
 export const education: EducationType[] = [
