@@ -51,7 +51,7 @@ export const resumeProjects: ResumeProjectType[] = [
   {
     id: 1,
     image: EventTrack,
-    projectName: "EventTrack",
+    projectName: "Event track",
     projectType: "Semester project",
     about:
       "EventTrack is a common web platfrom for Event management. The application can be used by both organisers and users for promoting and finding an event.",
@@ -82,7 +82,7 @@ export const resumeProjects: ResumeProjectType[] = [
   },
   {
     id: 3,
-    projectName: "EventTrack-v2.0",
+    projectName: "Event track-v2.0",
     image: EventTrackV2,
     projectType: "Semester project",
     about:
@@ -99,7 +99,7 @@ export const resumeProjects: ResumeProjectType[] = [
   },
   {
     id: 4,
-    projectName: "EventTrace",
+    projectName: "Event trace",
     image: EventTrace,
     projectType: "Semester project",
     about:

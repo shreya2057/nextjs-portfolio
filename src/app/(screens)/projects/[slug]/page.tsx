@@ -12,7 +12,7 @@ function ProjectDescription({ params }: { params: { slug: string } }) {
     tools,
     projectType,
     image,
-  } = resumeProjects[Number(params?.slug)];
+  } = resumeProjects[Number(params?.slug) - 1];
   return (
     <div className="flex flex-col gap-6 w-full bg-gray-700 p-10 rounded-md text-gray-200 justify-center">
       <div>
