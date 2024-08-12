@@ -1,5 +1,8 @@
+"use client";
+import { GreyButton } from "@/nextjs-portfolio/components/Buttons/GreyButton";
 import { resumeProjects } from "@/nextjs-portfolio/data/resume";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { AiOutlineGithub } from "react-icons/ai";
 
 function ProjectDescription({ params }: { params: { slug: string } }) {
@@ -13,6 +16,7 @@ function ProjectDescription({ params }: { params: { slug: string } }) {
     projectType,
     image,
   } = resumeProjects[Number(params?.slug) - 1];
+  const router = useRouter();
   return (
     <div className="flex flex-col gap-6 w-full bg-gray-700 p-10 rounded-md text-gray-200 justify-center">
       <div>
@@ -62,6 +66,12 @@ function ProjectDescription({ params }: { params: { slug: string } }) {
             objectFit="stretch"
           />
         </div>
+      </div>
+      <div className="self-end pt-2">
+        <GreyButton
+          text="View other projects"
+          onClickFunction={() => router.push("/projects")}
+        />
       </div>
     </div>
   );
