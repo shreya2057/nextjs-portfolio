@@ -1,7 +1,9 @@
 "use client";
 import { GreyButton } from "@/nextjs-portfolio/components/Buttons/GreyButton";
+import { PrimaryButton } from "@/nextjs-portfolio/components/Buttons/PrimaryButton";
 import { resumeProjects } from "@/nextjs-portfolio/data/resume";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { AiOutlineGithub } from "react-icons/ai";
 
@@ -67,7 +69,13 @@ function ProjectDescription({ params }: { params: { slug: string } }) {
           />
         </div>
       </div>
-      <div className="self-end pt-2">
+      <div className="flex w-full justify-between pt-2">
+        <Link href={link} passHref={true}>
+          <PrimaryButton
+            text="View github repository"
+            onClickFunction={() => {}}
+          />
+        </Link>
         <GreyButton
           text="View other projects"
           onClickFunction={() => router.push("/projects")}
