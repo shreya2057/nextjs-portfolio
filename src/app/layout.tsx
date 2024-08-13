@@ -4,6 +4,7 @@ import "./globals.css";
 import { NavBar } from "../components/Navbar";
 import RouteTransition from "../components/Animations/RouteTransition";
 import { Footer } from "../components/Footer";
+import Provider from "../components/Provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,9 @@ export default function RootLayout({
         <div className="min-h-dvh flex flex-col max-w-screen justify-between bg-black">
           <NavBar />
           <RouteTransition>
-            <div className="flex min-h-full min-w-screen">{children}</div>
+            <Provider>
+              <div className="flex min-h-full min-w-screen">{children}</div>
+            </Provider>
           </RouteTransition>
           <Footer />
         </div>
