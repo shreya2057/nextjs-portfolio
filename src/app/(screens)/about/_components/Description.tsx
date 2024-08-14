@@ -37,7 +37,7 @@ export const Description = () => {
         <div className="flex flex-col gap-2 w-full justify-between">
           {Object.keys(skillsType)?.map((type, index) => (
             <div className="flex flex-col gap-2" key={index}>
-              <span className="flex items-center gap-2 pl-4 text-sm">
+              <span className="flex flex-wrap items-center gap-2 pl-4 text-sm">
                 <GoStarFill />
                 <strong>{skillsType[type as keyof typeof skillsType]}:</strong>
                 {aboutSectionSkills[
@@ -65,7 +65,7 @@ export const Description = () => {
         </div>
         <div className="flex flex-col gap-2 w-full justify-between">
           <div className="flex flex-col gap-2">
-            <span className="flex items-center gap-2 pl-4 text-sm">
+            <span className="flex flex-wrap items-center gap-2 pl-4 text-sm">
               <GoStarFill />
 
               {additionalSkills.map((skill, index) => (

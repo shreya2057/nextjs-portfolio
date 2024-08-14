@@ -5,7 +5,7 @@ import { AiFillLinkedin, AiOutlineGithub, AiOutlineMail } from "react-icons/ai";
 
 export const Info = () => {
   return (
-    <div className="flex flex-col items-center bg-gray-700 px-8 py-10 justify-center rounded-md gap-4 h-full">
+    <div className=" w-full flex flex-col items-center bg-gray-700 px-8 py-10 justify-center rounded-md gap-4 h-full">
       <div className="flex rounded-md h-48 p-4 bg-gray-200">
         <Image
           src={ResumeImage}
