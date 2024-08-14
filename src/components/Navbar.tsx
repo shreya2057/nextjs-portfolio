@@ -27,7 +27,7 @@ export const NavBar = () => {
       >
         <Link href={"/"}>Home</Link>
         <Link href={"/projects"}>Projects</Link>
-        <Link href={"/certifications"}>Certifications</Link>
+        <Link href={"/experience"}>Experience</Link>
         <Link href={"/about"}>About</Link>
         <Link href={"/contact"}>
           <div className="lg:px-3 lg:py-1 lg:border border-amber-500 rounded-md">
