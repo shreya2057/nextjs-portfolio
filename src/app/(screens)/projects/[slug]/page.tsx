@@ -25,7 +25,7 @@ function ProjectDescription({ params }: { params: { slug: string } }) {
         <p className="text-2xl font-bold">Projects Description</p>
         <hr className="flex w-72 border-gray-300  border-[1.5px]" />
       </div>
-      <div className="flex gap-5">
+      <div className="flex flex-col lg:flex-row gap-5">
         <div className="flex flex-[55%] flex-col gap-4">
           <div className="flex flex-col gap-3">
             <a href={link}>
@@ -69,7 +69,7 @@ function ProjectDescription({ params }: { params: { slug: string } }) {
           />
         </div>
       </div>
-      <div className="flex w-full justify-between pt-2">
+      <div className="flex flex-wrap gap-3 sm:flex-row w-full justify-center sm:justify-between pt-2">
         <Link href={link} passHref={true}>
           <PrimaryButton
             text="View github repository"
