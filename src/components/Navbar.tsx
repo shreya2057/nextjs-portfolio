@@ -24,7 +24,7 @@ export const NavBar = () => {
     },
   };
   return (
-    <div className="flex w-full  lg:flex-row py-3 px-8 lg:px-10 justify-between bg-black items-center transition-all duration-150 ease-in-out">
+    <div className="flex w-full lg:flex-row py-3 px-8 lg:px-10 justify-between bg-black items-center transition-all duration-150 ease-in-out">
       <div className="flex flex-row justify-between w-full items-center ">
         <Link href={"/"}>
           <div className="font-extrabold text-xl text-green-600">
@@ -39,6 +39,7 @@ export const NavBar = () => {
         </button>
       </div>
       <motion.nav
+        initial={false}
         className={
           "flex lg:hidden flex-col gap-4 w-full absolute pl-8 py-5 font-semibold text-amber-500 items-start left-0 top-12 backdrop-blur-xl z-10"
         }
