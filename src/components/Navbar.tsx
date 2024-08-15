@@ -1,12 +1,30 @@
 "use client";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import { NavbarItems } from "./NavbarItems";
 
 export const NavBar = () => {
   const [isMenuVisible, setMenuVisibility] = useState(false);
+  const variants = {
+    open: {
+      y: 6,
+      opacity: 1,
+      transition: {
+        y: { stiffness: 1000, velocity: -100 },
+      },
+    },
+    closed: {
+      y: 0,
+      opacity: 0,
+      transition: {
+        y: { stiffness: 1000 },
+      },
+    },
+  };
   return (
-    <div className="flex lg:flex-row py-3 px-8 lg:px-10 justify-between bg-black items-center">
+    <div className="flex w-full  lg:flex-row py-3 px-8 lg:px-10 justify-between bg-black items-center transition-all duration-150 ease-in-out">
       <div className="flex flex-row justify-between w-full items-center ">
         <Link href={"/"}>
           <div className="font-extrabold text-xl text-green-600">
@@ -20,20 +38,21 @@ export const NavBar = () => {
           <IoMenu />
         </button>
       </div>
-      <div
-        className={`${
-          isMenuVisible ? "flex" : "hidden"
-        } absolute flex-col pl-8 py-3 lg:p-0 lg:static lg:flex gap-3 lg:gap-6 font-semibold lg:flex-row text-amber-500 items-start lg:items-center z-1 left-0 top-14 backdrop-blur-xl lg:bg-black w-full lg:w-auto z-10`}
+      <motion.nav
+        className={
+          "flex lg:hidden flex-col gap-4 w-full absolute pl-8 py-5 font-semibold text-amber-500 items-start left-0 top-12 backdrop-blur-xl z-10"
+        }
+        animate={isMenuVisible ? "open" : "closed"}
+        variants={variants}
       >
-        <Link href={"/"}>Home</Link>
-        <Link href={"/projects"}>Projects</Link>
-        <Link href={"/experience"}>Experience</Link>
-        <Link href={"/about"}>About</Link>
-        <Link href={"/contact"}>
-          <div className="lg:px-3 lg:py-1 lg:border border-amber-500 rounded-md">
-            Contact
-          </div>
-        </Link>
+        <NavbarItems />
+      </motion.nav>
+      <div
+        className={
+          "hidden lg:flex gap-6 font-semibold text-amber-500 items-center bg-black "
+        }
+      >
+        <NavbarItems />
       </div>
     </div>
   );
